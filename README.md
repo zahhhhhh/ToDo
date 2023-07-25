@@ -46,3 +46,28 @@ Access the home page ("/") without logging in and verify that you are redirected
 Access the login page ("/login") when already logged in and verify that you are redirected to the home page.
 Try accessing the registration page ("/register") when already logged in and verify that you are redirected to the home page.
 Try accessing the home page ("/") after logging out and verify that you are redirected to the login page.
+
+Installation instructions
+1. Clone the Repository:
+  git clone <repository-https://github.com/zahhhhhh/ToDo.git
+![image](https://github.com/zahhhhhh/ToDo/assets/79584184/be80f831-66a7-4386-924e-4e57303cfe11)
+>
+2. Install Dependencies:
+   cd <project-directory>
+    npm install
+3. Set Up the Database:
+  Make sure you have SQLite installed on your system.
+  Create a new SQLite database file named todolist.db.
+  You can use a SQLite client like "DB Browser for SQLite" or run SQLite commands to create the necessary table. Use the following command to create the tasks table:
+  CREATE TABLE tasks (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  description TEXT NOT NULL,
+  status TEXT NOT NULL
+);
+  
+Run instructions:
+1. Start the Server:
+   node server.js
+2.Access the Web Application:
+Open your web browser and go to http://localhost:3001/  to access the home page.
+You can now register, login, and manage your todo list through the web application.
